@@ -61,7 +61,7 @@ public class Player : MonoBehaviour
     // Will colide with the coin. Other.gameobject is the coin, withouth other. the player would distroy itself..
     private void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject.layer == 7)
+        if (other.gameObject.layer == 6)
         {
             Destroy(other.gameObject);
             superJumpsRemaining++;
